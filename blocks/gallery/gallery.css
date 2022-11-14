@@ -1,0 +1,19 @@
+.gallery > div > div {
+  line-height:2;
+  -webkit-column-count:3; /* split it into 5 columns */
+  -webkit-column-gap:10px; /* give it a 5px gap between columns */
+  -moz-column-count:3;
+  -moz-column-gap:10px;
+  column-count:3;
+  column-gap:10px;
+}
+
+.gallery > div > div > picture {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:10px; /* to match column gap */
+}
+
+.gallery-wrapper {
+  max-width: unset !important;
+}
