@@ -1,0 +1,45 @@
+/* HORIZONTAL SCROLL */
+.slider {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px 70px 5px 20px;
+  background: transparent;
+  height: 100%;
+  /* border-radius: 15px; */
+  /* background-color: blueviolet; */
+}
+
+.slider>div {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .section>div {
+    max-width: unset;
+  }
+}
+
+.slider {
+  padding: unset;
+}
+
+/* .slider-container {
+  padding: inherit 0;
+} */
+
+@media (min-width: 600px) {
+  main .slider-container {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+}
+
+.slider>div>div picture {
+  margin-right: 22px;
+}
+
+.slider>div>div img {
+  height: 600px;
+  object-fit: cover;
+}

@@ -60,7 +60,37 @@ export default async function decorate(block) {
     });
     nav.prepend(hamburger);
     nav.setAttribute('aria-expanded', 'false');
+    nav.setAttribute('id', 'navbar');
+    console.log(nav)
     decorateIcons(nav);
     block.append(nav);
   }
 }
+
+
+// let lastScrollTop = 0;
+
+// window.onscroll = (e => {
+//   let st = window.pageYOffset || document.documentElement.scrollTop;
+
+//   if (st > lastScrollTop) {
+//     console.log(`${st} up`);
+//   } else {
+//     document.getElementById("navbar").style.top = `${st+64}px`;
+//     document.getElementById("navbar").style.opacity = "1";
+//     console.log(`${st} down`);
+//   }
+
+//   lastScrollTop = st <= 0 ? 0 : st;
+
+//   if (document.body.scrollTop > 32 || document.documentElement.scrollTop > 32)
+//     document.getElementById("navbar").style.opacity = ".2";
+//   else
+//     document.getElementById("navbar").style.opacity = "1";
+
+//   if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
+//     document.getElementById("navbar").style.top = '-64px';
+//   } else {
+//     document.getElementById("navbar").style.top = "0";
+//   }
+// })

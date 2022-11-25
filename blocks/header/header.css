@@ -9,10 +9,12 @@ header nav {
   position: fixed;
   z-index: 1;
   background-color: var(--background-color);
-  width: 98vw;
+  width: 100vw;
   height: var(--nav-height);
   box-sizing: border-box;
   font-family: var(--body-font-family);
+ 
+  color:#fff;
 }
 
 header nav a:any-link {
